@@ -122,7 +122,7 @@ st.caption(f"Connected to: {vehicle_type}")
 # Initialize chat session
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "I'm ready to help. What's the problem?"}
+        {"role": "assistant", "content": "Hello! I am Mac. How can I assist you today?"}
     ]
 
 # Render chat history
@@ -188,4 +188,5 @@ if user_text or camera_file:
     st.session_state.messages.append({
         "role": "assistant",
         "content": final_advice
+
     })
