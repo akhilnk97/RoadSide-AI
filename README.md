@@ -67,25 +67,23 @@ AI Model: Google Gemini 2.0 Flash (via google-generativeai SDK)
 
 Logic: Sequential Chain-of-Thought Prompting
 
+
 🚀 How to Run Locally
-Clone the repository
 
-
-
+1. Clone the repository
 git clone [https://github.com/akhilnk97/RoadSide-AI.git](https://github.com/akhilnk97/RoadSide-AI.git)
 cd RoadSide-AI
-Install dependencies
 
-
+2. Install dependencies
 pip install -r requirements.txt
-Run the App
 
-
+3.Run the App
 streamlit run app.py
 Enter Credentials
 
 Enter your Google API Key in the sidebar to activate the mechanic.
 
 Note: This project was built as a Capstone for the Google AI Agents Intensive. It demonstrates the use of Multi-Agent Systems and Multimodal LLMs to solve real-world problems.
+
 
 
