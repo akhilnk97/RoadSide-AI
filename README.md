@@ -3,6 +3,7 @@
 **Built for the Google AI Agents Intensive 2025 (Agents for Good Track)**
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://roadside-ai.streamlit.app)
+
 ---
 
 ## 🚨 The Problem
@@ -16,7 +17,7 @@ Unlike generic chatbots, it uses a **Sequential Logic Chain** to diagnose issues
 
 ## 🎥 Demo
 * **[📺 Watch the Video Demo](https://www.youtube.com/watch?v=lp1_We-0hgQ)**
-* **[🚀 Try the Live App](https://roadside-ai-256wcewdwkt2hbcyucgqtp.streamlit.app/)**
+* **[🚀 Try the Live App](https://roadside-ai.streamlit.app)**
 
 ---
 
@@ -41,25 +42,3 @@ graph TD
     style Mech fill:#e3f2fd,stroke:#1565c0,color:black
     style Safe fill:#ffebee,stroke:#c62828,color:black
     style UI fill:#f3e5f5,stroke:#4a148c,color:black
-The Agents
-Agent 1 (The Mechanic): Uses Gemini 2.0 Flash (Vision) to analyze photos of the engine and suggest repairs. It has a specific persona ("Mac") to keep the user calm.
-
-Agent 2 (The Safety Supervisor): A dedicated guardrail agent that reviews every piece of advice for risks (fire, heat, traffic) before the user sees it.
-
-✨ Key Features
-👁️ Vision-Powered: Snap a photo of the engine to identify specific parts (Spark plugs, Battery terminals).
-
-🔗 Sequential Logic: The AI asks for feedback ("Did that fix it?") before moving to the next step.
-
-🛡️ Safety First: Real-time risk assessment prevents dangerous advice.
-
-🧠 Context Awareness: Remembers the vehicle type (Scooter/Car) throughout the session.
-
-💻 Tech Stack
-Language: Python 3.10+
-
-Frontend: Streamlit
-
-AI Model: Google Gemini 2.0 Flash (via google-generativeai SDK)
-
-Logic: Sequential Chain-of-Thought Prompting
