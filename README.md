@@ -20,6 +20,22 @@ Unlike generic chatbots, it uses a **Sequential Logic Chain** to diagnose issues
 * **[🚀 Try the Live App](https://roadside-ai-256wcewdwkt2hbcyucgqtp.streamlit.app/)**
 
 ---
+The Agents
+1. Agent 1 (The Mechanic): Uses Gemini 2.0 Flash (Vision) to analyze photos of the engine and suggest repairs. It has a specific persona ("Mac") to keep the user calm.
+
+2. Agent 2 (The Safety Supervisor): A dedicated guardrail agent that reviews every piece of advice for risks (fire, heat, traffic) before the user sees it.
+
+✨ Key Features
+👁️ Vision-Powered: Snap a photo of the engine to identify specific parts (Spark plugs, Battery terminals).
+
+🔗 Sequential Logic: The AI asks for feedback ("Did that fix it?") before moving to the next step.
+
+🛡️ Safety First: Real-time risk assessment prevents dangerous advice.
+
+🧠 Context Awareness: Remembers the vehicle type (Scooter/Car) throughout the session.
+
+💻 Tech Stack
+Language: Python 3.10+
 
 ## 🛠️ Architecture (The "Brain")
 This project uses a **Dual-Agent System** to ensure accuracy and safety.
@@ -43,25 +59,11 @@ graph TD
     style Safe fill:#ffebee,stroke:#c62828,color:black
     style UI fill:#f3e5f5,stroke:#4a148c,color:black
 
-The Agents
-1. Agent 1 (The Mechanic): Uses Gemini 2.0 Flash (Vision) to analyze photos of the engine and suggest repairs. It has a specific persona ("Mac") to keep the user calm.
 
-2. Agent 2 (The Safety Supervisor): A dedicated guardrail agent that reviews every piece of advice for risks (fire, heat, traffic) before the user sees it.
-
-✨ Key Features
-👁️ Vision-Powered: Snap a photo of the engine to identify specific parts (Spark plugs, Battery terminals).
-
-🔗 Sequential Logic: The AI asks for feedback ("Did that fix it?") before moving to the next step.
-
-🛡️ Safety First: Real-time risk assessment prevents dangerous advice.
-
-🧠 Context Awareness: Remembers the vehicle type (Scooter/Car) throughout the session.
-
-💻 Tech Stack
-Language: Python 3.10+
 
 Frontend: Streamlit
 
 AI Model: Google Gemini 2.0 Flash (via google-generativeai SDK)
 
 Logic: Sequential Chain-of-Thought Prompting
+
