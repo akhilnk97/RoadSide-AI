@@ -15,8 +15,8 @@ Unlike generic chatbots, it uses a **Sequential Logic Chain** to diagnose issues
 ---
 
 ## 🎥 Demo
-* **[📺 Watch the Video Demo](YOUR_YOUTUBE_LINK_HERE)**
-* **[🚀 Try the Live App]([YOUR_STREAMLIT_LINK_HERE](https://roadside-ai-256wcewdwkt2hbcyucgqtp.streamlit.app/))**
+* **[📺 Watch the Video Demo](https://www.youtube.com/watch?v=lp1_We-0hgQ)**
+* **[🚀 Try the Live App](https://roadside-ai-256wcewdwkt2hbcyucgqtp.streamlit.app/)**
 
 ---
 
