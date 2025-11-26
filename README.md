@@ -77,13 +77,14 @@ cd RoadSide-AI
 2. Install dependencies
 pip install -r requirements.txt
 
-3.Run the App
-streamlit run app.py
+ 3.Run the App
+ streamlit run app.py
 Enter Credentials
 
 Enter your Google API Key in the sidebar to activate the mechanic.
 
 Note: This project was built as a Capstone for the Google AI Agents Intensive. It demonstrates the use of Multi-Agent Systems and Multimodal LLMs to solve real-world problems.
+
 
 
 
