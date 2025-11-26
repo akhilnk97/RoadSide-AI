@@ -42,3 +42,51 @@ graph TD
     style Mech fill:#e3f2fd,stroke:#1565c0,color:black
     style Safe fill:#ffebee,stroke:#c62828,color:black
     style UI fill:#f3e5f5,stroke:#4a148c,color:black
+```
+
+The Agents
+Agent 1 (The Mechanic): Uses Gemini 2.0 Flash (Vision) to analyze photos of the engine and suggest repairs. It has a specific persona ("Mac") to keep the user calm.
+
+Agent 2 (The Safety Supervisor): A dedicated guardrail agent that reviews every piece of advice for risks (fire, heat, traffic) before the user sees it.
+
+✨ Key Features
+👁️ Vision-Powered: Snap a photo of the engine to identify specific parts (Spark plugs, Battery terminals).
+
+🔗 Sequential Logic: The AI asks for feedback ("Did that fix it?") before moving to the next step.
+
+🛡️ Safety First: Real-time risk assessment prevents dangerous advice.
+
+🧠 Context Awareness: Remembers the vehicle type (Scooter/Car) throughout the session.
+
+💻 Tech Stack
+Language: Python 3.10+
+
+Frontend: Streamlit
+
+AI Model: Google Gemini 2.0 Flash (via google-generativeai SDK)
+
+Logic: Sequential Chain-of-Thought Prompting
+
+🚀 How to Run Locally
+Clone the repository
+
+Bash
+
+git clone [https://github.com/akhilnk97/RoadSide-AI.git](https://github.com/akhilnk97/RoadSide-AI.git)
+cd RoadSide-AI
+Install dependencies
+
+Bash
+
+pip install -r requirements.txt
+Run the App
+
+Bash
+
+streamlit run app.py
+Enter Credentials
+
+Enter your Google API Key in the sidebar to activate the mechanic.
+
+Note: This project was built as a Capstone for the Google AI Agents Intensive. It demonstrates the use of Multi-Agent Systems and Multimodal LLMs to solve real-world problems.
+
