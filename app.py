@@ -138,7 +138,6 @@ st.markdown("---") # Divider
 # --- INPUT AREA ---
 
 # 1. The Camera Button (Hidden inside a Popover)
-# This solves your issue: Camera is off until user clicks "Take Photo"
 with st.popover("📸 Take Photo", use_container_width=True):
     camera_file = st.camera_input("Snap a picture", label_visibility="collapsed")
 
@@ -190,3 +189,4 @@ if user_text or camera_file:
         "content": final_advice
 
     })
+
